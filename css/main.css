@@ -81,3 +81,32 @@
 /* -------------------------------------------- */
 /*                   transform                  */
 /* -------------------------------------------- */
+.transform .box {
+  transition: all 300ms 200ms cubic-bezier(0.5, -0.33, 0.1, 1.02);
+}
+
+.transform .b1 {
+  transform: rotate(0);
+  transform-origin: top left;
+}
+
+.transform .b1:hover {
+  transform: rotate(-60deg);
+}
+
+.transform .b2:hover {
+  /* transform: scaleY(1.5); */
+  transform: scaleX(1.5);
+}
+
+.transform .b3 {
+  transform-origin: bottom left;
+}
+.transform .b3:hover {
+  transform: skewX(20deg);
+  transform: skewY(20deg);
+}
+
+.transform .b4:hover {
+	transform: translate(30px, 30px);
+}
