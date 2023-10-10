@@ -1,37 +1,83 @@
 .wrapper {
-	width: 800px;
-	margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .transform,
 .transition,
 .animation {
-	border: 1px solid #999;
-	margin: 20px 0;
-	padding: 0 0;
+  border: 1px solid #999;
+  margin: 20px 0;
+  padding: 0 0;
 }
 
 .box {
-	width: 200px;
-	height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .b1 {
-	background-color: #80e1d4;
-	/*blue*/
+  background-color: #80e1d4;
+  /*blue*/
 }
 
 .b2 {
-	background-color: #9696ff;
-	/*orange*/
+  background-color: #9696ff;
+  /*orange*/
 }
 
 .b3 {
-	background-color: #85e1f4;
-	/*green*/
+  background-color: #85e1f4;
+  /*green*/
 }
 
 .b4 {
-	background-color: #e89380;
-	/*purple*/
+  background-color: #e89380;
+  /*purple*/
 }
+/* -------------------------------------------- */
+/*                  transitions                 */
+/* -------------------------------------------- */
+.transition .b1 {
+  transition: width 700ms ease-in-out;
+}
+
+.transition .b1:hover {
+  width: 400px;
+  height: 150px;
+}
+
+.transition .b2 {
+  transition: width 700ms, height 700ms ease-in-out;
+  transition-delay: 500ms;
+}
+.transition .b2:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.transition .b3 {
+  transition: background-color 100ms, transform 400ms,
+    border-radius 450ms linear;
+  transition-delay: 300ms;
+}
+
+.transition .b3:hover {
+  background-color: #e89380;
+  border-radius: 50%;
+  transform: rotate(30deg);
+}
+
+.transition .b4 {
+  transition: all 1s cubic-bezier(0.5, -0.33, 0.49, 1.37);
+}
+
+.transition .b4:hover {
+  background-color: #9696ff;
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+
+/* -------------------------------------------- */
+/*                   transform                  */
+/* -------------------------------------------- */
